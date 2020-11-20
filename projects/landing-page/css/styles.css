@@ -47,7 +47,9 @@ p {
 
 /* ---- Layout Rules ---- */
 main {
-    margin: 10vh 1em 10vh;
+    height: 100%;
+    margin: auto;
+    margin-right: 9em;
 }
 
 .main-hero {
@@ -65,13 +67,14 @@ section {
 
 /* Navigation Styles*/
 .navbar__menu ul {
-    padding-left: 0;
+    padding: 0;
     margin: 0;
-    text-align: right;
+    text-align: center;
 }
 
 .navbar__menu li {
     display: inline-block;
+    margin: 0;
 }
 
 .navbar__menu .menu__link {
@@ -93,7 +96,9 @@ section {
     background: #fff;
     position: fixed;
     top: 0;
-    width: 100%;
+    right: 0;
+    width: 7%;
+    height: 100%;
     z-index: 5;
 }
 
