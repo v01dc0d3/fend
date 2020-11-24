@@ -46,10 +46,19 @@ p {
 }
 
 /* ---- Layout Rules ---- */
-main {
+.navbar__menu {
     height: 100%;
-    margin: auto;
-    margin-right: 9em;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+}
+
+main {
+    margin-right: 160px;
+    padding: 0px 10px;
 }
 
 .main-hero {
@@ -66,15 +75,18 @@ section {
 /* ---- Module Rules ---- */
 
 /* Navigation Styles*/
+
 .navbar__menu ul {
-    padding: 0;
-    margin: 0;
+    padding: 6px 0px 6px 25px;
+    margin-bottom: 10px;
     text-align: center;
+    display: block;
 }
 
 .navbar__menu li {
     display: inline-block;
     margin: 0;
+    cursor: pointer;
 }
 
 .navbar__menu .menu__link {
@@ -87,6 +99,12 @@ section {
 
 .navbar__menu .menu__link:hover {
     background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
+.navbar__menu .active {
+    background: gray;
     color: #fff;
     transition: ease 0.3s all;
 }
